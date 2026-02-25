@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Tax Consultants and Associates</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* ===== NAVBAR ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    height:60px;
+}
+
+.logo-text h1{
+    margin:0;
+    letter-spacing:3px;
+    color:#2b4f8c;
+}
+
+.logo-text p{
+    margin:0;
+    font-size:14px;
+    color:#555;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#2b4f8c;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(15,45,90,0.8),rgba(20,60,120,0.8)),
+    url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin:6px 0;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 28px;
+    border:none;
+    border-radius:25px;
+    background:#2b6cb0;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#1c3d7a;
+}
+
+/* ===== SERVICES ===== */
+.services-section{
+    background:linear-gradient(90deg,#1c3d7a,#2b6cb0);
+    padding:60px 8%;
+    text-align:center;
+    color:white;
+}
+
+.services-section h2{
+    margin-bottom:40px;
+}
+
+.services{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    background:white;
+    color:#333;
+    width:300px;
+    padding:25px;
+    border-radius:15px;
+    text-align:left;
+}
+
+.service-card h3{
+    margin-top:0;
+    color:#1c3d7a;
+}
+
+/* ===== ABOUT ===== */
+.about{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+.about p{
+    line-height:1.7;
+    color:#555;
+}
+
+/* ===== CONTACT ===== */
+.contact{
+    background:linear-gradient(90deg,#1c3d7a,#2b6cb0);
+    padding:60px 10%;
+    text-align:center;
+    color:white;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+.contact button{
+    padding:12px;
+    width:100%;
+    border:none;
+    border-radius:25px;
+    background:#0a1f44;
+    color:white;
+    cursor:pointer;
+}
+
+.contact-info{
+    margin-top:25px;
+}
+
+footer{
+    background:#0a1f44;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+    .hero h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <img src="Logo.jpeg" alt="Quantum Tax Consultancy Logo">
+        <div class="logo-text">
+            <h1>QUANTUM</h1>
+            <p>Tax Consultants & Associates</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h2>Quick & Hassle-Free Tax Services</h2>
+        <p><strong>Call / WhatsApp:</strong> 9529399443</p>
+        <p><strong>Email:</strong> qtaxoffice@gmail.com</p>
+        <button onclick="window.location.href='https://wa.me/919529399443'">
+            Contact Now
+        </button>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+    <h2>Our Specializations</h2>
+
+    <div class="services">
+        <div class="service-card">
+            <h3>Tax & Compliance</h3>
+            <ul>
+                <li>Income Tax Returns & Planning</li>
+                <li>GST Registration & Returns</li>
+                <li>Audit – Co-op Housing Society</li>
+                <li>Accounting & Bookkeeping</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Business & Registration</h3>
+            <ul>
+                <li>LLP / Pvt. Ltd. / Proprietorship</li>
+                <li>Partnership Registration</li>
+                <li>Udyam Aadhar</li>
+                <li>Shop Act, PT, ESIC</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Other Services</h3>
+            <ul>
+                <li>PAN / TAN</li>
+                <li>PF Withdrawal</li>
+                <li>Passport Assistance</li>
+                <li>Rent Agreement</li>
+                <li>FSSAI Registration</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Quantum Tax Consultants and Associates is a professional tax consultancy firm
+        dedicated to delivering accurate, reliable and transparent financial services.
+        We provide expert guidance in Income Tax Returns, GST Registration & Filing,
+        Accounting, Business Registration, Financial Advisory and Compliance Management.
+    </p>
+    <p>
+        We believe in Professional Integrity, Accuracy & Efficiency,
+        Client Confidentiality and Personalized Service tailored to every client's needs.
+    </p>
+    <h3>Your Trust. Our Responsibility.</h3>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <p><strong>Phone:</strong> 9529399443</p>
+        <p><strong>Email:</strong> qtaxoffice@gmail.com</p>
+        <p><strong>Address:</strong><br>
+            Office No. 3,<br>
+            Om Shivshambho Heights,<br>
+            Mohan Nagar, Dhankawadi,<br>
+            Pune - 411043
+        </p>
+    </div>
+</section>
+
+<footer>
+© 2026 Quantum Tax Consultants and Associates | All Rights Reserved
+</footer>
+
+</body>
+</html>
