@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Filing | Quantum Tax Consultants</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0f2c, #0d1b4c, #0a0f2c);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(10, 15, 44, 0.85);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h2 { margin: 0; font-size: 1.5rem; }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        header a:hover { color: #6dd5fa; }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            opacity: 0.85;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, #6dd5fa, #c77dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .hero-text button {
+            padding: 14px 30px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #6dd5fa, #c77dff);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-text button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(109, 213, 250, 0.3);
+        }
+
+        .hero-img {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .hero-img img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        }
+
+        /* SERVICES SECTION */
+        .section {
+            padding: 80px 8%;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 18px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 30px rgba(109, 213, 250, 0.25);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .card h3 {
+            color: #6dd5fa;
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        /* PROCESS SECTION */
+        .process {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .step h4 {
+            color: #c77dff;
+            margin-top: 0;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* CONTACT FORM SECTION */
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input, 
+        .contact-form select, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.07);
+            color: white;
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box; /* Crucial for alignment */
+            transition: 0.3s;
+        }
+
+        .contact-form input:focus, 
+        .contact-form select:focus, 
+        .contact-form textarea:focus {
+            border-color: #6dd5fa;
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .contact-form select option {
+            background-color: #0d1b4c;
+            color: white;
+        }
+
+        .contact-form button {
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #6dd5fa, #c77dff);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(199, 125, 255, 0.3);
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* RESPONSIVE MEDIA QUERIES */
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 34px; }
+            .hero { padding: 40px 5%; }
+            .section { padding: 50px 5%; }
+            header { padding: 15px 5%; }
+            header h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Quantum Tax Consultants</h2>
+        <a href="index.html">← Back to Home</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Professional <span class="gradient">Income Tax Filing</span> Services</h1>
+            <p>
+                Get your Income Tax Return filed accurately and on time. 
+                We help salaried individuals, business owners, and professionals maximize refunds and stay fully compliant.
+            </p>
+            <button onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">
+                Start Your ITR Filing
+            </button>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Income Tax Service Illustration">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="gradient">Our ITR Services Include</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>ITR Filing</h3>
+                <p>Expert filing for ITR-1 to ITR-4. We ensure you select the correct form to avoid unnecessary scrutiny notices.</p>
+            </div>
+            <div class="card">
+                <h3>Tax Planning</h3>
+                <p>Personalized strategies to legally minimize your tax liability using available deductions and exemptions.</p>
+            </div>
+            <div class="card">
+                <h3>Capital Gains</h3>
+                <p>Precise reporting for property sales, stock market trading, and mutual funds to ensure 100% data accuracy.</p>
+            </div>
+            <div class="card">
+                <h3>Refund Support</h3>
+                <p>End-to-end assistance in tracking refunds and responding to outstanding tax demand notices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(0,0,0,0.2);">
+        <h2 class="gradient">Our Simple 3-Step Process</h2>
+        <div class="process">
+            <div class="step">
+                <h4>Step 1</h4>
+                <p>Submit your documents securely via WhatsApp or our encrypted email channel.</p>
+            </div>
+            <div class="step">
+                <h4>Step 2</h4>
+                <p>Our experts calculate your tax liability and optimize all possible deductions.</p>
+            </div>
+            <div class="step">
+                <h4>Step 3</h4>
+                <p>Your ITR is filed and the official acknowledgment is shared with you instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact-section">
+        <h2 class="gradient">Interested? Let's Get Started</h2>
+        <div class="contact-container">
+            <form action="https://formspree.io/f/mgoljvdj" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="ITR Filing">ITR Filing</option>
+                    <option value="Tax Planning">Tax Planning</option>
+                    <option value="Capital Gains">Capital Gains Filing</option>
+                    <option value="Refund Support">Refund Processing</option>
+                </select>
+
+                <textarea name="message" placeholder="Tell us about your requirement..." rows="4"></textarea>
+
+                <button type="submit">Submit Details</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; opacity: 0.6; font-size: 14px;">
+        &copy; 2026 Quantum Tax Consultants & Associates. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Registration | Quantum Tax Consultants</title>
+
+<style>
+body{
+margin:0;
+font-family:Segoe UI,sans-serif;
+background:linear-gradient(135deg,#0a0f2c,#0d1b4c,#0a0f2c);
+color:#fff;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(10,15,44,0.85);
+backdrop-filter:blur(12px);
+}
+
+header h2{margin:0;}
+header a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+opacity:0.85;
+font-size:17px;
+line-height:1.6;
+}
+
+.gradient{
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-text button{
+margin-top:25px;
+padding:14px 30px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.hero-img{
+flex:1;
+min-width:300px;
+}
+
+.hero-img img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+/* SECTION */
+.section{
+padding:60px 8%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:18px;
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.06);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 30px rgba(109,213,250,0.25);
+}
+
+.card h3{
+color:#6dd5fa;
+margin-top:0;
+}
+
+/* PROCESS */
+.process{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+margin-top:40px;
+}
+
+.step{
+flex:1;
+min-width:220px;
+background:rgba(255,255,255,0.04);
+padding:25px;
+border-radius:15px;
+}
+
+.step h4{
+color:#c77dff;
+margin-top:0;
+}
+
+/* CONTACT FORM */
+.contact-form{
+max-width:600px;
+margin:40px auto 0;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+padding:14px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.1);
+background-color:#0d1b4c;
+color:white;
+font-size:15px;
+outline:none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+color:rgba(255,255,255,0.6);
+}
+
+.contact-form button{
+padding:14px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px rgba(109,213,250,0.4);
+}
+
+@media(max-width:768px){
+.hero h1{font-size:34px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Quantum Tax Consultants & Associates</h2>
+<a href="index.html">← Back</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-text">
+<h1>Start Your <span class="gradient">Business Registration</span></h1>
+<p>
+Register your business legally and start your entrepreneurial journey
+with expert guidance. We provide quick and hassle-free company
+registration services across India.
+</p>
+<button onclick="window.location.href='index.html#contact'">
+Register Your Business
+</button>
+</div>
+
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c">
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+<h2 class="gradient">Our Business Registration Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>LLP Registration</h3>
+<p>Register a Limited Liability Partnership with legal protection and flexible management.</p>
+</div>
+
+<div class="card">
+<h3>Private Limited Company</h3>
+<p>Ideal structure for startups and businesses planning to scale and raise funding.</p>
+</div>
+
+<div class="card">
+<h3>Partnership Firm</h3>
+<p>Simple business structure where two or more partners manage and operate a business.</p>
+</div>
+
+<div class="card">
+<h3>Udyam Registration</h3>
+<p>Get MSME recognition and access to government schemes and subsidies.</p>
+</div>
+
+<div class="card">
+<h3>Shop Act Registration</h3>
+<p>Mandatory license for shops, offices and commercial establishments.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+<h2 class="gradient">Our Simple 3-Step Process</h2>
+
+<div class="process">
+
+<div class="step">
+<h4>Step 1</h4>
+<p>Share your basic business details and identity documents.</p>
+</div>
+
+<div class="step">
+<h4>Step 2</h4>
+<p>Our experts prepare and submit your registration application.</p>
+</div>
+
+<div class="step">
+<h4>Step 3</h4>
+<p>Your business registration certificate is delivered to you quickly.</p>
+</div>
+
+</div>
+</section>
+
+<!-- INTEREST FORM -->
+<section class="section">
+<h2 class="gradient">Interested? Let's Get Started</h2>
+
+<form action="https://formspree.io/f/mgoljvdj" method="POST" class="contact-form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<select required>
+<option value="">Select Registration Type</option>
+<option>LLP Registration</option>
+<option>Private Limited Company</option>
+<option>Partnership Firm</option>
+<option>Udyam Registration</option>
+<option>Shop Act Registration</option>
+</select>
+
+<textarea placeholder="Tell us about your requirement..." rows="4"></textarea>
+
+<button type="submit">Submit Details</button>
+
+</form>
+</section>
+
+</body>
+</html>

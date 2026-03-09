@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accounting Services | Quantum Tax Consultants</title>
+
+<style>
+body{
+margin:0;
+font-family:Segoe UI,sans-serif;
+background:linear-gradient(135deg,#0a0f2c,#0d1b4c,#0a0f2c);
+color:#fff;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(10,15,44,0.85);
+backdrop-filter:blur(12px);
+}
+
+header h2{margin:0;}
+header a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+opacity:0.85;
+font-size:17px;
+line-height:1.6;
+}
+
+.gradient{
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-text button{
+margin-top:25px;
+padding:14px 30px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.hero-img{
+flex:1;
+min-width:300px;
+}
+
+.hero-img img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+/* SECTION */
+.section{
+padding:60px 8%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:18px;
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.06);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 30px rgba(109,213,250,0.25);
+}
+
+.card h3{
+color:#6dd5fa;
+margin-top:0;
+}
+
+/* PROCESS */
+.process{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+margin-top:40px;
+}
+
+.step{
+flex:1;
+min-width:220px;
+background:rgba(255,255,255,0.04);
+padding:25px;
+border-radius:15px;
+}
+
+.step h4{
+color:#c77dff;
+margin-top:0;
+}
+
+/* CONTACT FORM */
+.contact-form{
+max-width:600px;
+margin:40px auto 0;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+padding:14px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.1);
+background-color:#0d1b4c;
+color:white;
+font-size:15px;
+outline:none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+color:rgba(255,255,255,0.6);
+}
+
+.contact-form button{
+padding:14px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px rgba(109,213,250,0.4);
+}
+
+@media(max-width:768px){
+.hero h1{font-size:34px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Quantum Tax Consultants & Associates</h2>
+<a href="index.html">← Back</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-text">
+<h1>Professional <span class="gradient">Accounting Services</span></h1>
+
+<p>
+Accurate accounting is essential for every successful business.
+We provide professional bookkeeping, financial statements and
+reporting services to keep your finances organized and compliant.
+</p>
+
+<button onclick="window.location.href='index.html#contact'">
+Start Accounting Service
+</button>
+
+</div>
+
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+<h2 class="gradient">Our Accounting Services Include</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Bookkeeping</h3>
+<p>Daily transaction recording and maintenance of financial records.</p>
+</div>
+
+<div class="card">
+<h3>Financial Statements</h3>
+<p>Preparation of balance sheet, profit & loss statement and reports.</p>
+</div>
+
+<div class="card">
+<h3>Business Reporting</h3>
+<p>Detailed financial analysis and reporting for better decision making.</p>
+</div>
+
+<div class="card">
+<h3>Expense Tracking</h3>
+<p>Monitor expenses and maintain accurate records for tax compliance.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+
+<h2 class="gradient">Our Simple 3-Step Process</h2>
+
+<div class="process">
+
+<div class="step">
+<h4>Step 1</h4>
+<p>Share your business transactions and financial documents.</p>
+</div>
+
+<div class="step">
+<h4>Step 2</h4>
+<p>Our experts organize and record your accounts accurately.</p>
+</div>
+
+<div class="step">
+<h4>Step 3</h4>
+<p>You receive clear financial reports and statements regularly.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section">
+
+<h2 class="gradient">Interested? Let's Get Started</h2>
+
+<form action="https://formspree.io/f/mgoljvdj" method="POST" class="contact-form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<select required>
+<option value="">Select Accounting Service</option>
+<option>Bookkeeping</option>
+<option>Financial Statements</option>
+<option>Business Reporting</option>
+<option>Expense Tracking</option>
+</select>
+
+<textarea placeholder="Tell us about your requirement..." rows="4"></textarea>
+
+<button type="submit">Submit Details</button>
+
+</form>
+</section>
+
+</body>
+</html>
