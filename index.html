@@ -1,239 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "LocalBusiness",
-  "name": "QUANTUM Tax Consultants & Associates",
-  "image": "https://quantumtax.in/logo.jpeg",
-  "telephone": "9529399443",
-  "email": "info@quantumtax.in",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Office No. 3, Om Shivshambho Heights",
-    "addressLocality": "Dhankawadi, Pune",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "INDIA",
-    "postalCode": "411043"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "10:30",
-      "closes": "21:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Sunday",
-      "opens": "17:00",
-      "closes": "21:00"
-    }
-  ],
-  "url": "https://quantumtax.in/"
-}
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quantum Tax Consultants and Associates</title>
+<title>Quantum Tax Consultants And Associates</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body{
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    scroll-behavior:smooth;
+margin:0;
+font-family:Segoe UI,sans-serif;
+color:#fff;
+background:linear-gradient(135deg,#0a0f2c,#0d1b4c,#0a0f2c);
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:#fff;
-    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(10,15,44,0.7);
+backdrop-filter:blur(14px);
+z-index:1000;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo img{
-    height:60px;
-}
-
-.logo-text h1{
-    margin:0;
-    letter-spacing:3px;
-    color:#2b4f8c;
-}
-
-.logo-text p{
-    margin:0;
-    font-size:14px;
-    color:#555;
+header h2{
+font-size:35px;
+font-weight:600;
+margin:0;
 }
 
 nav a{
-    margin-left:25px;
-    text-decoration:none;
-    color:#333;
-    font-weight:500;
+margin-left:25px;
+text-decoration:none;
+color:#ffffff;
+font-weight:600;
+font-size:16px;
+letter-spacing:0.5px;
 }
 
 nav a:hover{
-    color:#2b4f8c;
+color:#6dd5fa;
 }
 
-/* ===== HERO ===== */
+.get-quote{
+padding:8px 18px;
+border-radius:10px;
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+color:#fff;
+}
+
+/* HERO */
 .hero{
-    height:90vh;
-    background:linear-gradient(rgba(15,45,90,0.8),rgba(20,60,120,0.8)),
-    url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    padding:20px;
+padding:160px 8% 80px;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
 }
 
-.hero h2{
-    font-size:48px;
-    margin-bottom:15px;
+.hero-text{flex:1;min-width:280px}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:15px;
 }
 
-.hero p{
-    font-size:18px;
-    margin:6px 0;
+.gradient-text{
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
-.hero button{
-    margin-top:20px;
-    padding:12px 28px;
-    border:none;
-    border-radius:25px;
-    background:#2b6cb0;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
+.hero-buttons{
+margin-top:20px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
 }
 
-.hero button:hover{
-    background:#1c3d7a;
+.btn-gradient{
+padding:12px 26px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+color:#fff;
+cursor:pointer;
 }
 
-/* ===== SERVICES ===== */
-.services-section{
-    background:linear-gradient(90deg,#1c3d7a,#2b6cb0);
-    padding:60px 8%;
-    text-align:center;
-    color:white;
+.btn-dark{
+padding:12px 26px;
+border-radius:12px;
+background:#050816;
+color:#fff;
+border:1px solid rgba(255,255,255,0.15);
 }
 
-.services-section h2{
-    margin-bottom:40px;
+/* HERO IMAGE SLIDER */
+.hero-img{
+flex:1;
+min-width:280px;
+background:rgba(255,255,255,0.04);
+padding:20px;
+border-radius:20px;
+backdrop-filter:blur(14px);
 }
 
+.slider{
+position:relative;
+width:100%;
+height:320px;
+overflow:hidden;
+border-radius:14px;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+transition:opacity 1s ease-in-out;
+}
+
+.slide.active{
+opacity:1;
+}
+
+/* COUNTERS */
+.counters{
+display:flex;
+gap:40px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.counters h2{
+margin:0;
+color:#6dd5fa;
+}
+
+/* GLASS CARD */
+.glass{
+background:rgba(255,255,255,0.04);
+border-radius:18px;
+padding:25px;
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,0.06);
+box-shadow:0 0 25px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.glass:hover{
+box-shadow:0 0 30px rgba(109,213,250,0.25);
+transform:translateY(-6px);
+}
+
+/* SERVICES & ABOUT */
 .services{
-    display:flex;
-    gap:25px;
-    justify-content:center;
-    flex-wrap:wrap;
+padding:60px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
-.service-card{
-    background:white;
-    color:#333;
-    width:300px;
-    padding:25px;
-    border-radius:15px;
-    text-align:left;
-}
-
-.service-card h3{
-    margin-top:0;
-    color:#1c3d7a;
-}
-
-/* ===== ABOUT ===== */
-.about{
-    padding:60px 10%;
-    text-align:center;
-}
-
-.about h2{
-    margin-bottom:20px;
-}
-
-.about p{
-    line-height:1.7;
-    color:#555;
-}
-
-/* ===== CONTACT ===== */
+/* CONTACT */
 .contact{
-    background:linear-gradient(90deg,#1c3d7a,#2b6cb0);
-    padding:60px 10%;
-    text-align:center;
-    color:white;
+padding:60px 8%;
+display:flex;
+flex-wrap:wrap;
+gap:40px;
 }
 
-.contact form{
-    max-width:500px;
-    margin:auto;
+.contact-left{flex:1;min-width:280px}
+.contact-right{flex:1;min-width:280px}
+
+input,textarea,select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+border:none;
+background:rgba(255,255,255,0.05);
+color:#fff;
 }
 
-.contact input,
-.contact textarea{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:none;
-    border-radius:8px;
+button{
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+border:none;
+padding:12px;
+border-radius:10px;
+color:#fff;
+width:100%;
 }
 
-.contact button{
-    padding:12px;
-    width:100%;
-    border:none;
-    border-radius:25px;
-    background:#0a1f44;
-    color:white;
-    cursor:pointer;
+/* FLOAT BUTTONS */
+.float-btn{
+position:fixed;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+bottom:20px;
 }
 
-.contact-info{
-    margin-top:25px;
+.float-btn a{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:linear-gradient(90deg,#6dd5fa,#c77dff);
+color:#fff;
+font-size:20px;
+text-decoration:none;
 }
 
-footer{
-    background:#0a1f44;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-
+/* RESPONSIVE */
 @media(max-width:768px){
-    .services{
-        flex-direction:column;
-        align-items:center;
-    }
-    .hero h2{
-        font-size:30px;
-    }
+.hero{padding-top:200px}
+header{flex-direction:column;align-items:flex-start}
+nav{margin-top:10px}
 }
 </style>
 </head>
@@ -241,122 +234,189 @@ footer{
 <body>
 
 <header>
-    <div class="logo">
-        <img src="Logo.jpeg" alt="Quantum Tax Consultancy Logo">
-        <div class="logo-text">
-            <h1>QUANTUM</h1>
-            <p>Tax Consultants & Associates</p>
-        </div>
-    </div>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h2>Quantum Tax Consultants and Associates</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+<a class="get-quote" href="#contact">Get Quote</a>
+</nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <div>
-        <h2>Quick & Hassle-Free Tax Services</h2>
-        <p><strong>Call / WhatsApp:</strong> 9529399443</p>
-        <p><strong>Email:</strong> info@quantumtax.in</p>
-        <button onclick="window.location.href='https://wa.me/919529399443'">
-            Contact Now
-        </button>
-    </div>
+<div class="hero-text">
+<p>Best E-Filing Services Near You</p>
+<h1>Expert Tax <span class="gradient-text">Solutions</span></h1>
+<p>Professional tax consulting, GST, business registration and financial services.</p>
+
+<div class="hero-buttons">
+<button class="btn-gradient">Free Consultation</button>
+<button class="btn-dark">Start E-Filing</button>
+</div>
+
+<div class="counters">
+<div><h2>500+</h2><p>Happy Clients</p></div>
+<div><h2>5+</h2><p>Years Experience</p></div>
+<div><h2>99%</h2><p>Success Rate</p></div>
+</div>
+</div>
+
+<div class="hero-img">
+<div class="slider">
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="slide active">
+<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85" class="slide">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" class="slide">
+</div>
+</div>
 </section>
 
-<section class="services-section" id="services">
-    <h2>Our Specializations</h2>
-
-    <div class="services">
-        <div class="service-card">
-            <h3>Tax & Compliance</h3>
-            <ul>
-                <li>Income Tax Returns & Planning</li>
-                <li>GST Registration & Returns</li>
-                <li>Audit – Co-op Housing Society</li>
-                <li>Accounting & Bookkeeping</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h3>Business & Registration</h3>
-            <ul>
-                <li>LLP / Pvt. Ltd. / Proprietorship</li>
-                <li>Partnership Registration</li>
-                <li>Udyam Aadhar</li>
-                <li>Shop Act, PT, ESIC</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h3>Other Services</h3>
-            <ul>
-                <li>PAN / TAN</li>
-                <li>PF Withdrawal</li>
-                <li>Passport Assistance</li>
-                <li>Rent Agreement</li>
-                <li>FSSAI Registration</li>
-            </ul>
-        </div>
-    </div>
+<!-- ABOUT -->
+<section id="about" class="services">
+<div class="glass">
+<h2 class="gradient-text">About Us</h2>
+<p>
+Quantum Tax Consultants and Associates is a professional tax consultancy firm dedicated to delivering accurate, reliable and transparent financial services. We provide expert guidance in Income Tax Returns, GST Registration & Filing, Accounting, Business Registration, Financial Advisory and Compliance Management.
+<p>
+We believe in Professional Integrity, Accuracy & Efficiency, Client Confidentiality and Personalized Service tailored to every client's needs.
+</p>
+<h3>Your Trust. Our Responsibility.</h3>
+</div>
 </section>
 
-<section class="about" id="about">
-    <h2>About Us</h2>
-    <p>
-        Quantum Tax Consultants and Associates is a professional tax consultancy firm
-        dedicated to delivering accurate, reliable and transparent financial services.
-        We provide expert guidance in Income Tax Returns, GST Registration & Filing,
-        Accounting, Business Registration, Financial Advisory and Compliance Management.
-    </p>
-    <p>
-        We believe in Professional Integrity, Accuracy & Efficiency,
-        Client Confidentiality and Personalized Service tailored to every client's needs.
-    </p>
-    <h3>Your Trust. Our Responsibility.</h3>
+<!-- SERVICES -->
+<section id="services" class="services">
+
+<a href="itr.html" style="text-decoration:none; color:white;">
+<div class="glass">
+<h3>Income Tax Filing</h3>
+<p>ITR filing, tax planning, refund processing and consultation.
+<h3> CLICK HERE>>> </h3> 
+</p>
+</div>
+</a>
+
+<a href="gst.html" style="text-decoration:none;color:white;">
+<div class="glass">
+<h3>GST Services</h3>
+<p>GST registration, monthly & annual returns and audit support.
+<h3> CLICK HERE>>> </h3> 
+</p>
+</div>
+</a>
+
+<a href="businessregistration.html" style="text-decoration:none;color:white;">
+<div class="glass">
+<h3>Business Registration</h3>
+<p>LLP, Pvt Ltd, Partnership, Udyam and Shop Act registration.
+<h3> CLICK HERE>>> </h3> 
+</p>
+</div>
+</a>
+
+<a href="audit.html" style="text-decoration:none;color:white;"> 
+<div class="glass"> 
+<h3>Audit Services</h3>
+<p>Internal audit and compliance management. 
+<h3> CLICK HERE>>> </h3> 
+</p>
+</div>
+</a>
+
+<a href="accounting.html" style="text-decoration:none;color:white;">
+<div class="glass">
+<h3>Accounting</h3>
+<p>Bookkeeping, financial statements and reporting.
+<h3> CLICK HERE>>> </h3> 
+</p>
+</div>
+</a>
+
+<a href="otherservices.html" style="text-decoration:none;color:white;">
+<div class="glass">
+<h3>Other Services</h3>
+<p>PAN, TAN, PF withdrawal, passport and rent agreement.
+<h3> CLICK HERE>>> </h3> 
+</p>
+</div>
+</a>
+
 </section>
 
-<section class="contact" id="contact">
-    <h2>Contact Us</h2>
+<!-- CONTACT -->
+<section id="contact" class="contact">
 
-    <!-- FORM UPDATED WITH FORMSPREE -->
-    <form action="https://formspree.io/f/xaqdvdjg" method="POST">
+<div class="contact-left">
+<h2 class="gradient-text">Get In Touch</h2>
+<p>📞 9529399443</p>
+<p>📧 qtaxoffice@gmail.com</p>
+<p>
+Office No. 3, Om Shivshambho Heights,<br>
+Mohan Nagar, Dhankawadi,<br>
+Pune - 411043
+</p>
+<p>
+Mon – sat: 10:30 AM – 9:00 PM<br>
+Sun: 4:00 PM – 9:00 PM
+</p>
+</div>
 
-        <input type="text" name="name" placeholder="Your Name" required>
+<div class="contact-right glass">
+<h3>Send us a Message</h3>
+<form action="https://formspree.io/f/mgoljvdj" method="POST">
+<input type="text" name="firstname" placeholder="First Name" required>
+<input type="text" name="lastname" placeholder="Last Name">
+<input type="text" name="Phone Number" placeholder="Phone Number">
+<input type="email" name="email" placeholder="Email" required>
 
-        <input type="email" name="email" placeholder="Email" required>
+<select name="service">
+<option>Select a service</option>
+<option>ITR Filing</option>
+<option>GST</option>
+<option>Business Registration</option>
+<option>Accounting</option>
+</select>
 
-        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+<textarea name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+<button type="submit">Send Message →</button>
+</form>
+</div>
 
-        <button type="submit">Send Message</button>
-
-        <input type="hidden" name="_next" value="https://quantumtax.in/thankyou.html">
-
-    </form>
-
-    <div class="contact-info">
-        <p><strong>Phone:</strong> 9529399443</p>
-        <p><strong>Email:</strong> info@quantumtax.in</p>
-        <p><strong>Address:</strong><br>
-            Office No. 3,<br>
-            Om Shivshambho Heights,<br>
-            Mohan Nagar, Dhankawadi,<br>
-            Pune - 411043
-        </p>
-    </div>
 </section>
 
-<footer>
-© 2026 Quantum Tax Consultants and Associates | All Rights Reserved
-</footer>
+<!-- FLOAT BUTTONS -->
+<div class="float-btn">
+<a href="https://wa.me/919529399443"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:9529399443"><i class="fas fa-phone"></i></a>
+</div>
+
+<!-- SLIDER SCRIPT -->
+<script>
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async function(e){
+
+e.preventDefault();
+
+const data = new FormData(form);
+
+await fetch(form.action,{
+method:"POST",
+body:data,
+headers:{'Accept':'application/json'}
+});
+
+alert("Message sent successfully!");
+
+form.reset();
+
+});
+
+</script>
 
 </body>
 </html>
-
-
 
 
